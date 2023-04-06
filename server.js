@@ -6,11 +6,20 @@ const { graphqlHTTP } = require('express-graphql');
 const express = require('express');
 
 // DB Connection
-const DB = `mongodb+srv://Assignment-1:VWi8eWZL73T7e2Ns@cluster0.jsbnmvo.mongodb.net/?retryWrites=true&w=majority`;
-mongoose.set('strictQuery', true); 
-mongoose.connect(DB).then(() => {
-    console.log("DB has been successfully connected");
-});
+//const DB = `mongodb+srv://Assignment-1:VWi8eWZL73T7e2Ns@cluster0.jsbnmvo.mongodb.net/?retryWrites=true&w=majority`;
+//mongoose.set('strictQuery', true); 
+//mongoose.connect(DB).then(() => {
+   // console.log("DB has been successfully connected");
+//});
+
+mongoose.set('strictQuery', flase);
+const conn = await mongoose.connect(process.evn.MONGO_URL);
+console.log(`MONGODB CONNECTED: ${conn.connection.host}`);
+ }catch (error){
+ console.log(error);
+    process.exit(1);
+}
+}
 
 
 
