@@ -9,16 +9,12 @@
          
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Hoon-Yim/101325908_COMP3133_Assignment1.git"
+    "type": "git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Hoon-Yim/101325908_COMP3133_Assignment1/issues"
-  },
-  "homepage": "https://github.com/Hoon-Yim/101325908_COMP3133_Assignment1#readme",
+ 
   "dependencies": {
     "apollo-server-express": "^3.11.1",
     "bcryptjs": "^2.4.3",
